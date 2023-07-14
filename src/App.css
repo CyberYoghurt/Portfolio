@@ -336,6 +336,9 @@ html {
   background-color: rgb(var(--color-1));
   transform: scale(1.05);
 }
+.contact__field *::selection {
+  background-color: rgb(var(--color-4));
+}
 .contact__link {
   color: rgb(var(--color-9));
   text-decoration: none;
@@ -361,6 +364,9 @@ html {
   padding: 10px;
   border-radius: 10px;
   border: 2px ridge rgb(var(--color-1));
+}
+.project__title::selection {
+  background-color: rgb(var(--color-6));
 }
 .project__separator {
   display: flex;
