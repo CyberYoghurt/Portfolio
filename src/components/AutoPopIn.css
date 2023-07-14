@@ -1,0 +1,38 @@
+.head {
+  width: 100%;
+}
+.heading {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(var(--color-8));
+}
+.heading::after {
+  content: '';
+  background-color: rgb(var(--color-8));
+  flex-grow: 1;
+  height: 5px;
+  margin: 10px;
+  border-radius: 0 10px 10px 0;
+}
+.heading::before {
+  content: '';
+  background-color: rgb(var(--color-8));
+  flex-grow: 1;
+  height: 5px;
+  margin: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.heading * {
+  margin: 0 5px 0 5px;
+}
+.button {
+  background-color: transparent;
+  border: none;
+}
+.image {
+  max-width: 25px;
+  max-height: 25px;
+}
