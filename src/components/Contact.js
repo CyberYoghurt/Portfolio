@@ -41,7 +41,7 @@ export default function Contact() {
         <div>
           <a
             className="contact__link"
-            href="https://drive.google.com/file/d/1f9obeEEAJaqk6hARPrEDIfC7pRnLo1Sg/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1EHOA16OluRgRH7mJS-RfxvCxwiNtKDo5/view?usp=drive_link"
           >
             Download CV <img alt="Resume icon" width={15} src={CVIcon}></img>
           </a>
