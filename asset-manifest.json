@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ccdca0e1.css",
+    "main.js": "/Portfolio/static/js/main.d4997442.js",
+    "static/media/1.png": "/Portfolio/static/media/1.0fac88abaa8852b5c5b0.png",
+    "static/media/5.png": "/Portfolio/static/media/5.a97a7855be17442d98e1.png",
+    "static/media/4.png": "/Portfolio/static/media/4.605cf6445276932eeb4f.png",
+    "static/media/3.png": "/Portfolio/static/media/3.48a99dc049070dba021b.png",
+    "static/media/7.png": "/Portfolio/static/media/7.00e2d1cc2fb50a07017d.png",
+    "static/media/6.png": "/Portfolio/static/media/6.4361d08b769a3295fb32.png",
+    "static/media/BG.jpg": "/Portfolio/static/media/BG.586990dca9b43d51a2ef.jpg",
+    "static/media/travis.png": "/Portfolio/static/media/travis.6d779aaf5dda6f6bfc39.png",
+    "static/media/ruby.png": "/Portfolio/static/media/ruby.9d178004fa6f2a50a7be.png",
+    "static/media/2.png": "/Portfolio/static/media/2.875b9b3daa71c7b2ee49.png",
+    "static/media/10.png": "/Portfolio/static/media/10.ac3f21740f09154636ba.png",
+    "static/media/docker.png": "/Portfolio/static/media/docker.ad1efa72f7c94844b7cf.png",
+    "static/media/aws.png": "/Portfolio/static/media/aws.db5f57af8d50bded7352.png",
+    "static/media/8.png": "/Portfolio/static/media/8.427a447619ba47e53aa5.png",
+    "static/media/solid.png": "/Portfolio/static/media/solid.b8317c72a28bf6704a57.png",
+    "static/media/9.png": "/Portfolio/static/media/9.c05a441f4730ce24aa69.png",
+    "static/media/nuxt.png": "/Portfolio/static/media/nuxt.21cbb3451fcd6262b445.png",
+    "static/media/web.png": "/Portfolio/static/media/web.655d54c71f9bde647248.png",
+    "static/media/postgresql.png": "/Portfolio/static/media/postgresql.b81b7dee023841b1509c.png",
+    "static/media/down-arrow.png": "/Portfolio/static/media/down-arrow.c9db6e8111b6ecd6b5d7.png",
+    "static/media/up-arrow.png": "/Portfolio/static/media/up-arrow.6d1bcb72e5a900671d52.png",
+    "static/media/coder.png": "/Portfolio/static/media/coder.91e1ad7972d4d344a6e3.png",
+    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.032cf8a63be2f0f4d425.png",
+    "static/media/react.png": "/Portfolio/static/media/react.7996de0115cfa0f7ed31.png",
+    "static/media/kubernetes.png": "/Portfolio/static/media/kubernetes.540edbd767b3bc2b1a19.png",
+    "static/media/cv.png": "/Portfolio/static/media/cv.85bde9712b71eaaf4a56.png",
+    "static/media/sass.png": "/Portfolio/static/media/sass.9e346975afb2b721c5ac.png",
+    "static/media/mysql.png": "/Portfolio/static/media/mysql.6591617616c2549a4246.png",
+    "index.html": "/Portfolio/index.html",
+    "main.ccdca0e1.css.map": "/Portfolio/static/css/main.ccdca0e1.css.map",
+    "main.d4997442.js.map": "/Portfolio/static/js/main.d4997442.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccdca0e1.css",
+    "static/js/main.d4997442.js"
+  ]
+}
