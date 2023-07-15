@@ -43,7 +43,8 @@ export default function Contact() {
             className="contact__link"
             href="https://drive.google.com/file/d/1EHOA16OluRgRH7mJS-RfxvCxwiNtKDo5/view?usp=drive_link"
           >
-            Download CV <img alt="Resume icon" width={15} src={CVIcon}></img>
+            Download resume{' '}
+            <img alt="Resume icon" width={15} src={CVIcon}></img>
           </a>
         </div>
       </div>
