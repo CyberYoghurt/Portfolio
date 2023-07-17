@@ -528,6 +528,9 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+  .skill {
+    width: 28%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .project__separator {
@@ -567,6 +570,35 @@ html {
   .skill__side--front {
     border-radius: 1rem 1rem 0 0;
   }
+  .body {
+    width: 95%;
+    left: 2.5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project__description,
+  .project__swiper {
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project__description {
+    height: 300px;
+  }
+  .hero {
+    display: block;
+    height: 350px;
+  }
+  .hero__content {
+    width: 100%;
+  }
+  .body {
+    width: 100%;
+    left: 0%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .project__separator {
@@ -584,5 +616,8 @@ html {
   }
   .project__description {
     height: 300px;
+  }
+  .skill {
+    width: 90%;
   }
 }
