@@ -29,15 +29,12 @@ export default function Project({
     return <li>{tech}</li>;
   });
 
-
   const listedGithub = githubLinks.map((link) => {
     return (
-      <div className="project__github">
-        <a className="project__github-link" href={link}>
-          Github Repository
-        </a>
+      <a className="project__github" href={link}>
+        <span className="project__github-link">Github Repository</span>
         <img alt="Github icon" className="project__github-icon" src={Github} />
-      </div>
+      </a>
     );
   });
 
@@ -57,12 +54,10 @@ export default function Project({
           </Swiper>
         </div>
         <div className="project__description">
-          <div className="project__live">
-            <a className="project__live-link" href={liveLink}>
-              Live Page
-            </a>
+          <a className="project__live" href={liveLink}>
+            <span className="project__live-link">Live Page</span>
             <img alt="web icon" className="project__live-icon" src={Web} />
-          </div>
+          </a>
           {listedGithub}
           <div className="project__text">{description}</div>
 

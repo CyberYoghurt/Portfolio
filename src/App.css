@@ -417,17 +417,27 @@ html {
   border: 2px dashed rgb(var(--color-7));
   margin-bottom: 5px;
 }
+.project__github > span,
+.project__live > span {
+  color: rgb(var(--color-7));
+  text-decoration: underline solid rgb(var(--color-7));
+}
+
 .project__github:first-child,
 .project__live:first-child {
   margin-top: 10px;
 }
 .project__github-link,
-.project__live-link {
-  color: rgb(var(--color-7));
+.project__live-link span {
+  text-align: end;
 }
-.project__github-link:visited,
-.project__live-link:visited {
-  color: rgb(var(--color-8));
+.project__github-link {
+  text-align: start;
+}
+.project__github:visited > span,
+.project__live:visited > span {
+  color: rgb(var(--color-5));
+  text-decoration: underline solid rgb(var(--color-5));
 }
 .project__github-icon,
 .project__live-icon {
@@ -528,6 +538,7 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
   .skill {
     width: 28%;
   }
