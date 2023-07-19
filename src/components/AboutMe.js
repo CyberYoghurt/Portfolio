@@ -1,3 +1,5 @@
+import Photo from '../images/photo.png';
+
 export default function AboutMe() {
   return (
     <div className="aboutme__section">
@@ -15,7 +17,7 @@ export default function AboutMe() {
           <div className="aboutme__action">
             <h3>Contact me</h3>
             <div className="aboutme__info">
-              <img className="aboutme__img" src="https://i.pravatar.cc/300" />
+              <img className="aboutme__img" src={Photo} />
               <p>Roberto Camacho</p>
               <div className="aboutme__active">Available 🟢</div>
             </div>
