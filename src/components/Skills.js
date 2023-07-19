@@ -19,6 +19,7 @@ import DjangoLogo from '../images/logos/django.png';
 import RailsLogo from '../images/logos/rails.png';
 import DrogonLogo from '../images/logos/drogon.png';
 import GraphQlLogo from '../images/logos/graphql.png';
+import Spring from '../images/logos/spring.png';
 //Dbs
 import MySQLLogo from '../images/logos/mysql.png';
 import PostgreSQLogo from '../images/logos/postgresql.png';
@@ -26,6 +27,7 @@ import MongoLogo from '../images/logos/mongo.png';
 //Design
 import SassLogo from '../images/logos/sass.png';
 import FigmaLogo from '../images/logos/figma.png';
+import TailWind from '../images/logos/tailwind.png';
 //Other
 import CiscoLogo from '../images/logos/cisco.png';
 import LinuxLogo from '../images/logos/lpi.png';
@@ -138,6 +140,12 @@ export default function Skills() {
         'Data query and manipulation language for APIs, provides clients exactly what they need.',
       icon: GraphQlLogo,
     },
+    {
+      skill: 'Spring',
+      description:
+        'The oldest framework in my skill set, good performance and good portability',
+      icon: Spring,
+    },
   ];
   const dbs = [
     {
@@ -164,6 +172,12 @@ export default function Skills() {
       description:
         'Preprocessor that provides the CSS styling of pages a lot more functionality. Easies the styling work for template pages or react Pages',
       icon: SassLogo,
+    },
+    {
+      skill: 'Tailwind',
+      description:
+        'This tool allows you to rapidly building modern websites without ever leaving the HTML',
+      icon: TailWind,
     },
     {
       skill: 'Figma',

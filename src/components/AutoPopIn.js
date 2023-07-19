@@ -25,11 +25,9 @@ export default function AutoPopIn({
         time = setTimeout(() => {
           setIsShown(true);
           setIsEntrance(true);
-          console.log('changing');
           resolve(true);
-        }, 500);
+        }, 350);
         setTimeout(() => {
-          console.log('In view port:', elementIsVisibleInViewport(el));
           if (elementIsVisibleInViewport(el) === false) {
             clearTimeout(time);
           }
@@ -78,7 +76,7 @@ export default function AutoPopIn({
 
   return (
     <div className="head">
-      <div ref={ref} className="heading">
+      <div ref={ref} className={`heading ${isShown ? ' ' : 'heading-margin'}`}>
         <div className="category">
           <h3>{text}</h3>
           <button className="button" onClick={toggleShown}>

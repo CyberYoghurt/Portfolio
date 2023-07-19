@@ -22,7 +22,7 @@ html {
   width: 140px;
   height: 150px;
   background: rgb(var(--color-4));
-  top: 100px;
+  top: 170px;
   left: 0px;
   display: flex;
   align-items: center;
@@ -285,7 +285,9 @@ li,
 .aboutme__info {
   margin-bottom: 15px;
 }
-
+.heading-margin {
+  margin-bottom: 150px;
+}
 .skills {
   margin-top: 5rem;
   width: 100%;
