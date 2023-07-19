@@ -21,12 +21,13 @@ export default function Project({
           alt={`${i} of project ${name}`}
           className="project__image"
           src={image}
+          key={i}
         />
       </SwiperSlide>
     );
   });
-  const listedTechnologies = technologies.map((tech) => {
-    return <li>{tech}</li>;
+  const listedTechnologies = technologies.map((tech, i) => {
+    return <li key={i}>{tech}</li>;
   });
 
   const listedGithub = githubLinks.map((link) => {

@@ -5,7 +5,7 @@ import CVIcon from '../images/cv.png';
 export default function Contact() {
   return (
     <section className="contact">
-      <h2 className="contact__title">Contact</h2>
+      <h2 className="contact__title ref1">Contact</h2>
       <div className=" contact__field">
         <div>Location</div>
         <div>
@@ -19,7 +19,7 @@ export default function Contact() {
       <div className="contact__field">
         <div> E-mail</div>
         <div>
-          <a className="contact__link" href="robertocr.21@hotmail.com">
+          <a className="contact__link" href="mailto:robertocr.21@hotmail.com">
             robertocr.21@hotmail.com
           </a>
         </div>

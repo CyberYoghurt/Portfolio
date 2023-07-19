@@ -244,7 +244,7 @@ export default function Skills() {
 
   return (
     <section className="skills">
-      <h2 className="section__title">Skills</h2>
+      <h2 className="section__title ref3">Skills</h2>
       <AutoPopIn
         showImage={DownArrow}
         hideImage={UpArrow}

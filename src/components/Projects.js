@@ -64,7 +64,7 @@ export default function Projects() {
 
   return (
     <section className="projects">
-      <h2 className="section__title">Projects</h2>
+      <h2 className="section__title ref4">Projects</h2>
       <Project
         name="Forestree"
         images={project1Images}

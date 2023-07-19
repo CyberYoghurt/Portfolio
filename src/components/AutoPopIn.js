@@ -12,26 +12,52 @@ export default function AutoPopIn({
   const [isShown, setIsShown] = useState(false);
   const [isEntrance, setIsEntrance] = useState(false);
 
-  function toggleShown() {
-    if (isShown === true) {
-      setIsEntrance(false);
-      setTimeout(() => {
-        setIsShown(false);
-      }, 1000);
-    } else if (isShown === false) {
-      setIsShown(true);
-      setIsEntrance(true);
-    }
+  async function toggleShown(el) {
+    return new Promise((resolve) => {
+      if (isShown === true) {
+        setIsEntrance(false);
+        setTimeout(() => {
+          setIsShown(false);
+          resolve(true);
+        }, 1000);
+      } else if (isShown === false) {
+        let time = null;
+        time = setTimeout(() => {
+          setIsShown(true);
+          setIsEntrance(true);
+          console.log('changing');
+          resolve(true);
+        }, 500);
+        setTimeout(() => {
+          console.log('In view port:', elementIsVisibleInViewport(el));
+          if (elementIsVisibleInViewport(el) === false) {
+            clearTimeout(time);
+          }
+        }, 300);
+      }
+    });
   }
+
+  const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
+    const { top, left, bottom, right } = el.getBoundingClientRect();
+    const { innerHeight, innerWidth } = window;
+    return partiallyVisible
+      ? (top > 0 && top < innerHeight) || (bottom > 0 && bottom < innerHeight)
+      : top >= 0 && left >= 0;
+  };
 
   const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      async ([entry]) => {
         if (entry.isIntersecting) {
-          toggleShown();
-          observer.unobserve(ref.current);
+          console.log('Is intersecting');
+          const wasToggled = await toggleShown(ref.current);
+          console.log(wasToggled);
+          if (wasToggled) {
+            observer.unobserve(ref.current);
+          }
         }
       },
       { rootMargin: '-30px' }
