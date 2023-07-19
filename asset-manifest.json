@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.36e608f8.css",
-    "main.js": "/Portfolio/static/js/main.97911056.js",
+    "main.css": "/Portfolio/static/css/main.4611be07.css",
+    "main.js": "/Portfolio/static/js/main.ead64925.js",
     "static/media/1.png": "/Portfolio/static/media/1.0fac88abaa8852b5c5b0.png",
     "static/media/5.png": "/Portfolio/static/media/5.a97a7855be17442d98e1.png",
     "static/media/4.png": "/Portfolio/static/media/4.605cf6445276932eeb4f.png",
@@ -18,6 +18,7 @@
     "static/media/8.png": "/Portfolio/static/media/8.427a447619ba47e53aa5.png",
     "static/media/solid.png": "/Portfolio/static/media/solid.b8317c72a28bf6704a57.png",
     "static/media/9.png": "/Portfolio/static/media/9.c05a441f4730ce24aa69.png",
+    "static/media/spring.png": "/Portfolio/static/media/spring.7f562dd523156ed1d39c.png",
     "static/media/nuxt.png": "/Portfolio/static/media/nuxt.21cbb3451fcd6262b445.png",
     "static/media/web.png": "/Portfolio/static/media/web.655d54c71f9bde647248.png",
     "static/media/postgresql.png": "/Portfolio/static/media/postgresql.b81b7dee023841b1509c.png",
@@ -31,11 +32,11 @@
     "static/media/sass.png": "/Portfolio/static/media/sass.9e346975afb2b721c5ac.png",
     "static/media/mysql.png": "/Portfolio/static/media/mysql.6591617616c2549a4246.png",
     "index.html": "/Portfolio/index.html",
-    "main.36e608f8.css.map": "/Portfolio/static/css/main.36e608f8.css.map",
-    "main.97911056.js.map": "/Portfolio/static/js/main.97911056.js.map"
+    "main.4611be07.css.map": "/Portfolio/static/css/main.4611be07.css.map",
+    "main.ead64925.js.map": "/Portfolio/static/js/main.ead64925.js.map"
   },
   "entrypoints": [
-    "static/css/main.36e608f8.css",
-    "static/js/main.97911056.js"
+    "static/css/main.4611be07.css",
+    "static/js/main.ead64925.js"
   ]
 }
