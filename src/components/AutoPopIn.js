@@ -50,9 +50,7 @@ export default function AutoPopIn({
     const observer = new IntersectionObserver(
       async ([entry]) => {
         if (entry.isIntersecting) {
-          console.log('Is intersecting');
           const wasToggled = await toggleShown(ref.current);
-          console.log(wasToggled);
           if (wasToggled) {
             observer.unobserve(ref.current);
           }
