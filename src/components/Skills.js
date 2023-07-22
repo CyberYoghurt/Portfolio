@@ -208,7 +208,7 @@ export default function Skills() {
     {
       skill: 'Docker',
       description:
-        'Docker is a open source container platform that allows you to deploy your application regardless of the colud provider.',
+        'Docker is an open source container platform that allows you to deploy your application regardless of the colud provider.',
       icon: DockerLogo,
     },
     {
