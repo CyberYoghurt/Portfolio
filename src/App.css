@@ -197,14 +197,9 @@ li,
   height: 60px;
   margin-bottom: 3rem;
   box-shadow: 10px;
-  transition: all 1s;
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   display: block;
   margin: 0 auto 2rem auto;
-}
-.hero__ellipse:hover {
-  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
-  transform: rotateX(30deg);
 }
 .hero__background {
   animation: slide 3s ease-in-out infinite alternate;
@@ -350,7 +345,7 @@ li,
   margin-bottom: 15px;
 }
 .heading-margin {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 .skills {
   margin-top: 5rem;
