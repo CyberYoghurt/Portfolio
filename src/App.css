@@ -140,19 +140,22 @@ li,
 }
 
 .hero {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
   margin-top: 0rem;
   color: rgb(var(--color-9));
   position: relative;
   z-index: 1;
   background-color: rgb(var(--color-1), 0.6);
   width: 100%;
-  height: 300px;
   text-align: center;
   box-shadow: 0 10px 5px rgb(var(--color-6), 0.8);
+}
+
+.hero__flex {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
 }
 
 .hero__img {
@@ -174,7 +177,65 @@ li,
   white-space: nowrap;
   -webkit-text-stroke: 1px rgb(var(--color-9));
 }
-
+.hero__typing {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__typing > span {
+  font-size: 30px;
+  color: rgb(var(--color-2));
+  background-color: rgb(var(--color-1));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px rgb(var(--color-8));
+}
+.hero__ellipse {
+  background: linear-gradient(rgb(var(--color-6)), rgb(var(--color-7)));
+  height: 60px;
+  margin-bottom: 3rem;
+  box-shadow: 10px;
+  transition: all 1s;
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+.hero__ellipse:hover {
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+  transform: rotateX(30deg);
+}
+.hero__background {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(var(--color-4)) 50%,
+    rgb(var(--color-6)) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+.hero__background1 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+.hero__background2 {
+  animation-duration: 5s;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
 .hero__content {
   width: 60%;
   border-radius: 1rem;
@@ -673,6 +734,13 @@ li,
   }
 }
 @media only screen and (max-width: 800px) {
+  .hero__flex {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .project__separator {
     display: flex;
     flex-direction: column;
@@ -768,6 +836,22 @@ li,
   }
 }
 @media only screen and (max-width: 600px) {
+  .hero {
+    height: 500px;
+  }
+  .hero__name {
+    font-size: 30px;
+  }
+  .hero__content {
+    width: 100%;
+  }
+  .hero__ellipse {
+    height: 80px;
+  }
+  .hero__typing > span {
+    max-width: 80%;
+    font-size: 12px;
+  }
   .project__description,
   .project__swiper {
     margin-top: 30px;
@@ -780,25 +864,19 @@ li,
   .project__description {
     height: 300px;
   }
-  .hero {
-    display: block;
-    height: 350px;
-  }
-  .hero__content {
-    width: 100%;
-  }
+
   .body {
     width: 100%;
     left: 0%;
   }
-  .hero {
-    height: 350px;
-  }
-  .hero__name {
-    font-size: 35px;
-  }
 }
 @media only screen and (max-width: 400px) {
+  .hero {
+    height: 500px;
+  }
+  .hero__name {
+    font-size: 30px;
+  }
   .project__separator {
     display: flex;
     flex-direction: column;
@@ -818,12 +896,7 @@ li,
   .skill {
     width: 90%;
   }
-  .hero {
-    height: 350px;
-  }
-  .hero__name {
-    font-size: 30px;
-  }
+
   .aboutme__card {
     grid-template-columns: 5px 20rem 5px;
   }
