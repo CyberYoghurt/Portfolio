@@ -15,7 +15,7 @@ export default function Navigator() {
     const coords = element.getBoundingClientRect();
     window.scrollTo({
       left: coords.left + window.pageXOffset,
-      top: coords.top + window.pageYOffset,
+      top: coords.top + window.pageYOffset - 50,
       behavior: 'smooth',
     });
   }
