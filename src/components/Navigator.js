@@ -48,7 +48,7 @@ export default function Navigator() {
           </a>
         </li>
         <li>
-          <img src={SmallArrow} className="navigator__little-arrow" />{' '}
+          <img src={SmallArrow} className="navigator__little-arrow" />
           <a className="navigator__link" onClick={() => scrollTo(4)}>
             Projects
           </a>
