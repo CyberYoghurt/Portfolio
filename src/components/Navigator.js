@@ -52,20 +52,6 @@ export default function Navigator() {
           <a className="navigator__link" onClick={() => scrollTo(4)}>
             Projects
           </a>
-          {/* <ul className="navigator__links">
-            <li>
-              <img src={SmallArrow} className="navigator__little-arrow" />{' '}
-              <a className="navigator__link">Frontend</a>
-            </li>
-            <li>
-              <img src={SmallArrow} className="navigator__little-arrow" />{' '}
-              <a className="navigator__link">Backend</a>
-            </li>
-            <li>
-              <img src={SmallArrow} className="navigator__little-arrow" />{' '}
-              <a className="navigator__link">Devops</a>
-            </li>
-          </ul> */}
         </li>
       </ul>
       <button className="navigator__button" onClick={handleClick}>
