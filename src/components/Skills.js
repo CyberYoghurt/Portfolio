@@ -1,186 +1,196 @@
-import React from 'react';
-import Skill from './Skill';
+import React from "react";
+import Skill from "./Skill";
 //Programming Languages
-import JavascriptLogo from '../images/logos/javascript.png';
-import TypeScriptLogo from '../images/logos/typescript.png';
-import PythonLogo from '../images/logos/python.png';
-import JavaLogo from '../images/logos/java.png';
-import CplusplusLogo from '../images/logos/c++.png';
-import RubyLogo from '../images/logos/ruby.png';
+import JavascriptLogo from "../images/logos/javascript.png";
+import TypeScriptLogo from "../images/logos/typescript.png";
+import PythonLogo from "../images/logos/python.png";
+import JavaLogo from "../images/logos/java.png";
+import CplusplusLogo from "../images/logos/c++.png";
+import RubyLogo from "../images/logos/ruby.png";
 //FrontEnd
-import ReactLogo from '../images/logos/react.png';
-import VueLogo from '../images/logos/vue.png';
-import SolidLogo from '../images/logos/solid.png';
-import NuxtLogo from '../images/logos/nuxt.png';
-import NextLogo from '../images/logos/next.png';
+import AngularLogo from "../images/logos/angularLogo.png";
+import ReactLogo from "../images/logos/react.png";
+import VueLogo from "../images/logos/vue.png";
+import SolidLogo from "../images/logos/solid.png";
+import NuxtLogo from "../images/logos/nuxt.png";
+import NextLogo from "../images/logos/next.png";
 //Frameworks and backend
-import ExpressLogo from '../images/logos/express.png';
-import DjangoLogo from '../images/logos/django.png';
-import RailsLogo from '../images/logos/rails.png';
-import DrogonLogo from '../images/logos/drogon.png';
-import GraphQlLogo from '../images/logos/graphql.png';
-import Spring from '../images/logos/spring.png';
+import ExpressLogo from "../images/logos/express.png";
+import DjangoLogo from "../images/logos/django.png";
+import RailsLogo from "../images/logos/rails.png";
+import DrogonLogo from "../images/logos/drogon.png";
+import GraphQlLogo from "../images/logos/graphql.png";
+import Spring from "../images/logos/spring.png";
 //Dbs
-import MySQLLogo from '../images/logos/mysql.png';
-import PostgreSQLogo from '../images/logos/postgresql.png';
-import MongoLogo from '../images/logos/mongo.png';
+import MySQLLogo from "../images/logos/mysql.png";
+import PostgreSQLogo from "../images/logos/postgresql.png";
+import MongoLogo from "../images/logos/mongo.png";
 //Design
-import SassLogo from '../images/logos/sass.png';
-import FigmaLogo from '../images/logos/figma.png';
-import TailWind from '../images/logos/tailwind.png';
+import SassLogo from "../images/logos/sass.png";
+import FigmaLogo from "../images/logos/figma.png";
+import TailWind from "../images/logos/tailwind.png";
 //Other
-import CiscoLogo from '../images/logos/cisco.png';
-import LinuxLogo from '../images/logos/lpi.png';
-import AWSLogo from '../images/logos/aws.png';
-import DockerLogo from '../images/logos/docker.png';
-import TravisLogo from '../images/logos/travis.png';
-import KubernetesLogo from '../images/logos/kubernetes.png';
+import CiscoLogo from "../images/logos/cisco.png";
+import LinuxLogo from "../images/logos/lpi.png";
+import AWSLogo from "../images/logos/aws.png";
+import GCPLogo from "../images/logos/gcpLogo.png";
 
-import AutoPopIn from './AutoPopIn.js';
-import UpArrow from '../images/up-arrow.png';
-import DownArrow from '../images/down-arrow.png';
+import DockerLogo from "../images/logos/docker.png";
+import TravisLogo from "../images/logos/travis.png";
+import KubernetesLogo from "../images/logos/kubernetes.png";
+import JenkinsLogo from "../images/logos/jenkinsLogo.png";
+
+import AutoPopIn from "./AutoPopIn.js";
+import UpArrow from "../images/up-arrow.png";
+import DownArrow from "../images/down-arrow.png";
 
 export default function Skills() {
   const languages = [
     {
-      skill: 'Javascript',
+      skill: "Javascript",
       description:
-        'Most used programming language nowadays, if you are reading this, you are using javascript.',
+        "Most used programming language nowadays, if you are reading this, you are using javascript.",
       icon: JavascriptLogo,
     },
     {
-      skill: 'Typescript',
-      description: 'Do fix bugs at development stage, not at production.',
+      skill: "Typescript",
+      description: "Do fix bugs at development stage, not at production.",
       icon: TypeScriptLogo,
     },
     {
-      skill: 'C++',
+      skill: "C++",
       description:
-        'My first programming language, learned the basics as part of my bachelor education, I went beyond to get a grasp of Drogon web server, the fastest web server available.',
+        "My first programming language, learned the basics as part of my bachelor education, I went beyond to get a grasp of Drogon web server, the fastest web server available.",
       icon: CplusplusLogo,
     },
     {
-      skill: 'Python',
+      skill: "Python",
       description:
         "Atop of a wide field of applications, it is the easiest programming language I've ever worked with.",
       icon: PythonLogo,
     },
     {
-      skill: 'Java',
+      skill: "Java",
       description:
-        'Platform independent programming language, I also learned it as part of my bachelor.',
+        "Platform independent programming language, I also learned it as part of my bachelor.",
       icon: JavaLogo,
     },
     {
-      skill: 'Ruby',
+      skill: "Ruby",
       description:
-        'Programming language with a focus on simplicity and productivity.',
+        "Programming language with a focus on simplicity and productivity.",
       icon: RubyLogo,
     },
   ];
   const frontEnd = [
     {
-      skill: 'React',
+      skill: "React",
       description:
-        'Most popular frontend framework, alongside Redux and Router, these are old friends.',
+        "Most popular frontend framework, alongside Redux and Router, these are old friends. React allows us to integrate all the libraries and tools in a not opinioned way.",
       icon: ReactLogo,
     },
     {
-      skill: 'Vue.js',
+      skill: "Angular",
       description:
-        'Alternative to React, standalone framework, whereas React uses external libraries.',
+        "The most complete framework ready to create enterprise-level applications. Previously known for being outdated and slow, that is no longer true with the latest update. NgRx state manager, angular universal and more.",
+      icon: AngularLogo,
+    },
+    {
+      skill: "Vue",
+      description:
+        "Alternative to React, or also known as the lite version of Angular, standalone framework, whereas React uses external libraries.",
       icon: VueLogo,
     },
     {
-      skill: 'SolidJS',
+      skill: "SolidJS",
       description:
-        'The frontend framework with the best performance. Similar to react in many ways but with a more efficient update model.',
+        "The frontend framework with the best performance. Similar to react in many ways but with a more efficient update model.",
       icon: SolidLogo,
     },
     {
-      skill: 'Next.js',
+      skill: "Next.js",
       description:
-        'A powerful tools that makes React have fullstack capabilities and more. A tool of choice when a costumer needs a complete application.',
+        "A powerful tools that makes React have fullstack capabilities and more. A tool of choice when a costumer needs a complete application.",
       icon: NextLogo,
     },
     {
-      skill: 'Nuxt.js',
+      skill: "Nuxt.js",
       description:
-        'An enhanced version of Vue.js, it is a good alternative to Next.js. It also comes with features that help SEO.',
+        "An enhanced version of Vue.js, it is a good alternative to Next.js. It also comes with features that help SEO.",
       icon: NuxtLogo,
     },
   ];
   const backEnd = [
     {
-      skill: 'Express',
+      skill: "Express",
       description:
-        'The most popular backend web application, the standard for nodejs.',
+        "The most popular backend web application, the standard for nodejs.",
       icon: ExpressLogo,
     },
     {
-      skill: 'Django',
-      description: 'Most poputar python-based web framework.',
+      skill: "Django",
+      description: "Most poputar python-based web framework.",
       icon: DjangoLogo,
     },
     {
-      skill: 'Rails',
+      skill: "Rails",
       description:
-        'Webdev framework known for its meta programming technique. Provided with Active Storage, Action Cable, Aciton Mailer and more, makes backend development so fast.',
+        "Webdev framework known for its meta programming technique. Provided with Active Storage, Action Cable, Aciton Mailer and more, makes backend development so fast.",
       icon: RailsLogo,
     },
     {
-      skill: 'Drogon',
+      skill: "Drogon",
       description:
-        'In my quest for performance, I ended up with this powerful but yet flexible framework.',
+        "In my quest for performance, I ended up with this powerful but yet flexible framework.",
       icon: DrogonLogo,
     },
     {
-      skill: 'GraphQL',
+      skill: "GraphQL",
       description:
-        'Data query and manipulation language for APIs, provides clients exactly what they need.',
+        "Data query and manipulation language for APIs, provides clients exactly what they need.",
       icon: GraphQlLogo,
     },
     {
-      skill: 'Spring',
+      skill: "Spring",
       description:
-        'The oldest framework in my skill set, good performance and good portability',
+        "The oldest framework in my skill set, good performance and good portability",
       icon: Spring,
     },
   ];
   const dbs = [
     {
-      skill: 'MySQL',
-      description: 'Pure relational database, better suited for websites.',
+      skill: "MySQL",
+      description: "Pure relational database, better suited for websites.",
       icon: MySQLLogo,
     },
     {
-      skill: 'PostgreSQL',
+      skill: "PostgreSQL",
       description:
-        'Object relational database, ideal for analytical processes, my personal favorite option to use in AWS RDS',
+        "Object relational database, ideal for analytical processes, my personal favorite option to use in AWS RDS",
       icon: PostgreSQLogo,
     },
     {
-      skill: 'MongoDB',
+      skill: "MongoDB",
       description:
-        'NoSQL database, popular for its flexible schema approach. I use this frequently alongside the Mongoose ODM for Node',
+        "NoSQL database, popular for its flexible schema approach. I use this frequently alongside the Mongoose ODM for Node",
       icon: MongoLogo,
     },
   ];
   const design = [
     {
-      skill: 'Sass',
+      skill: "Sass",
       description:
-        'Preprocessor that provides the CSS styling of pages a lot more functionality. Easies the styling work for template pages or react Pages',
+        "Preprocessor that provides the CSS styling of pages a lot more functionality. Easies the styling work for template pages or react Pages",
       icon: SassLogo,
     },
     {
-      skill: 'Tailwind',
+      skill: "Tailwind",
       description:
-        'This tool allows you to rapidly building modern websites without ever leaving the HTML',
+        "This tool allows you to rapidly building modern websites without ever leaving the HTML",
       icon: TailWind,
     },
     {
-      skill: 'Figma',
+      skill: "Figma",
       description:
         "Software tool for User Interface Design and and User Experience Design. I've created desings, site maps, wireframes and more.",
       icon: FigmaLogo,
@@ -188,39 +198,52 @@ export default function Skills() {
   ];
   const it = [
     {
-      skill: 'Linux',
+      skill: "Jenkins",
       description:
-        'I wanted to feel acquainted with all the working tools I use, so I accomplished the LPIC-1 Linux cert that acknowledges skills like maintenance tasks and networking troubleshooting of devices running Linux, and more.',
+        "This tool is a must when it comes to CI/CD pipelines. It is cloud agnostic and can be used for many tasks from testing to deployment.",
+      icon: JenkinsLogo,
+    },
+
+    {
+      skill: "Linux",
+      description:
+        "I wanted to feel acquainted with all the working tools I use, so I accomplished the LPIC-1 Linux cert that acknowledges skills like maintenance tasks and networking troubleshooting of devices running Linux, and more.",
       icon: LinuxLogo,
     },
     {
-      skill: 'Cisco',
+      skill: "Cisco",
       description:
         "I achieved a CCNA cert that validates abilities in: IP services, security fundamentals and automation required in today's most advanced networks.",
       icon: CiscoLogo,
     },
     {
-      skill: 'AWS',
+      skill: "AWS",
       description:
-        'EC2, RDS, DynamoDB. I studied for the AWS Cloud Practicioner and Certified Developer, the motivation was AWS being the biggest cloud provider in the world.',
+        "EC2, RDS, DynamoDB. I studied for the AWS Cloud Practicioner and Certified Developer, the motivation was AWS being the biggest cloud provider in the world.",
       icon: AWSLogo,
     },
     {
-      skill: 'Docker',
+      skill: "GCP",
       description:
-        'Docker is an open source container platform that allows you to deploy your application regardless of the colud provider.',
+        "The third most popular cloud provider. I am used to work with serveless services such as Cloud Run, but also I have experience with IaaS service like Computer Engine.",
+      icon: GCPLogo,
+    },
+    {
+      skill: "Docker",
+      description:
+        "Docker is an open source container platform that allows you to deploy your application regardless of the colud provider.",
       icon: DockerLogo,
     },
     {
-      skill: 'Travis',
+      skill: "Travis",
       description:
-        'An important opensource CI tool that automatically connects your development workspace directly to the deployment.',
+        "An important opensource CI tool that automatically connects your development workspace directly to the deployment.",
       icon: TravisLogo,
     },
     {
-      skill: 'Kubernetes',
+      skill: "Kubernetes",
       description:
-        'An excellent tool to manage clusters of web services and routers, makes scalability great, even improves security by isolating services.',
+        "An excellent tool to manage clusters of web services and routers, makes scalability great, even improves security by isolating services.",
       icon: KubernetesLogo,
     },
   ];

@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import RightArrow from '../images/right-arrow.png';
-import SmallArrow from '../images/little-arrow.png';
+import { useState, useEffect } from "react";
+import RightArrow from "../images/right-arrow.png";
+import SmallArrow from "../images/little-arrow.png";
 
 export default function Navigator() {
   const [isShown, setShown] = useState(true);
@@ -14,14 +14,14 @@ export default function Navigator() {
     const element = document.querySelector(ref);
     const coords = element.getBoundingClientRect();
     window.scrollTo({
-      left: coords.left + window.pageXOffset,
-      top: coords.top + window.pageYOffset - 50,
-      behavior: 'smooth',
+      left: coords.left + window.scrollX,
+      top: coords.top + window.scrollY - 50,
+      behavior: "smooth",
     });
   }
 
   return (
-    <div className={`navigator ${isShown ? '' : 'navigator__shown'}`}>
+    <div className={`navigator ${isShown ? "" : "navigator__shown"}`}>
       <ul className="navigator__links">
         <li>
           <img src={SmallArrow} className="navigator__little-arrow" />
@@ -58,7 +58,7 @@ export default function Navigator() {
         <img
           src={RightArrow}
           className={`navigator__arrow ${
-            isShown ? 'navigator__arrow-rotated' : ''
+            isShown ? "navigator__arrow-rotated" : ""
           }`}
         />
       </button>
